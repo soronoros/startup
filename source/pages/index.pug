@@ -1,0 +1,24 @@
+<!doctype html>
+    html
+        head
+            link(href="styles/main.css", rel="stylesheet")
+        body
+            include sections/title.pug
+            h1 hello
+            div
+                h2 world
+            .container
+            h2.title Title-title
+            section#contacts
+                h1 My title
+            section
+            img(alt="icon", src="img/sun.png")
+            mixin phrase
+                span Hello
+            +phrase
+            +phrase
+            mixin pet(name)
+                li.pet= name
+            ul
+                +pet('dog')
+                +pet('cat')
