@@ -1,0 +1,14 @@
+$font-color: #555;
+h2 {
+  font-family: Montserrat, serif;
+  color: $font-color;
+  padding-bottom: 30px;
+  border-bottom: 2px solid $font-color;
+}
+
+span {
+  font-family: 'Roboto slab', sans-serif;
+  color: $font-color;
+  font-weight: 400;
+  padding-top: 30px;
+}

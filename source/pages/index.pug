@@ -1,24 +1,47 @@
 <!doctype html>
-    html
+    html(lang='ru')
         head
-            link(href="styles/main.css", rel="stylesheet")
+            meta(charset='utf-8')
+            meta(name='viewport' content='width=device-width, initial-scale=1')
+            title Startup
+            link(href='styles/main.css', rel='stylesheet')
+            link(href='https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab&display=swap' rel='stylesheet')
         body
-            include sections/title.pug
-            h1 hello
-            div
-                h2 world
-            .container
-            h2.title Title-title
-            section#contacts
-                h1 My title
-            section
-            img(alt="icon", src="img/sun.png")
-            mixin phrase
-                span Hello
-            +phrase
-            +phrase
-            mixin pet(name)
-                li.pet= name
-            ul
-                +pet('dog')
-                +pet('cat')
+            div.header
+                div.container
+                    div.container.header_fixed
+                        div.header__logo
+                            h2 Startup
+                        div.header__menu
+                            a(href='#') Home
+                            a(href='#') Services
+                            a(href='#') About
+                            a(href='#') Works
+                            a(href='#') Blog
+                            a(href='#') Clients
+                            a(href='#') Contact
+                    div.container.header__text
+                        span Welcome to startup
+                        h3 Your Favourite Creative Agency Template
+                        a(class='button_link', href='#') Get Started
+            div.services
+                div.container
+                    div.container.services__title
+                        h2 services
+                        span We offer ipsum dolor sit amet, consetetur sadipscing elitr amet
+                    div.container.services__items
+                        a(href='#')
+                            div.items__block
+                                img(src='../img/services-icon_cart - копия.svg' alt='icon-chart')
+
+
+                        div.items__block
+                        div.items__block
+            div.about-us
+            div.works
+            div.request
+            div.block-posts
+            div.clients
+            div.footer
+
+
