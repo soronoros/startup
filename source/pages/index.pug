@@ -7,12 +7,11 @@
             link(href='styles/main.css', rel='stylesheet')
             link(href='https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab&display=swap' rel='stylesheet')
         body
-            div.header
-                div.container
-                    div.container.header_fixed
-                        div.header__logo
-                            h2 Startup
-                        div.header__menu
+            .header
+                .container
+                    .container.header_fixed
+                        .header__logo Startup
+                        .header__menu
                             a(href='#') Home
                             a(href='#') Services
                             a(href='#') About
@@ -20,28 +19,28 @@
                             a(href='#') Blog
                             a(href='#') Clients
                             a(href='#') Contact
-                    div.container.header__text
-                        span Welcome to startup
-                        h3 Your Favourite Creative Agency Template
+                    .container.header__text
+                        .header__title Welcome to startup
+                        .header__subtitle Your Favourite Creative Agency Template
                         a(class='button_link', href='#') Get Started
-            div.services
-                div.container
-                    div.container.services__title
-                        h2 services
-                        span We offer ipsum dolor sit amet, consetetur sadipscing elitr amet
-                    div.container.services__items
-                        a(href='#')
-                            div.items__block
-                                img(src='../img/services-icon_cart - копия.svg' alt='icon-chart')
+            .services
+                .container
+                    .services__title Services
+                    .services__subtitle We offer ipsum dolor sit amet, consetetur sadipscing elitr amet
+                    .services__items
+                        .services__item
+                            a(href='#')
+                                .items__block
+                                    img(src='../img/services-icon_chart.svg' alt='icon-chart')
+                        .services__item
+                            a(href='#')
+                                .items__block
+                                    img(src='../img/services-icon_chart.svg' alt='icon-chart')
 
-
-                        div.items__block
-                        div.items__block
-            div.about-us
-            div.works
-            div.request
-            div.block-posts
-            div.clients
-            div.footer
-
+            .about-us
+            .works
+            .request
+            .block-posts
+            .clients
+            .footer
 
