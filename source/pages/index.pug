@@ -7,40 +7,59 @@
             link(href='styles/main.css', rel='stylesheet')
             link(href='https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab&display=swap' rel='stylesheet')
         body
+        xml(version='1.0' encoding='utf-8')
+        <!-- Svg Vector Icons : http://www.onlinewebfonts.com/icon -->
+        <!doctype svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
             .header
                 .container
                     .container.header_fixed
                         .header__logo Startup
                         .header__menu
-                            a(href='#') Home
-                            a(href='#') Services
-                            a(href='#') About
-                            a(href='#') Works
-                            a(href='#') Blog
-                            a(href='#') Clients
-                            a(href='#') Contact
+                            a(class='header_link' href='#') Home
+                            a(class='header_link' href='#') Services
+                            a(class='header_link' href='#') About
+                            a(class='header_link' href='#') Works
+                            a(class='header_link' href='#') Blog
+                            a(class='header_link' href='#') Clients
+                            a(class='header_link' href='#') Contact
                     .container.header__text
                         .header__title Welcome to startup
                         .header__subtitle Your Favourite Creative Agency Template
                         a(class='button_link', href='#') Get Started
             .services
-                .container
-                    .services__title Services
-                    .services__subtitle We offer ipsum dolor sit amet, consetetur sadipscing elitr amet
-                    .services__items
-                        .services__item
-                            a(href='#')
-                                .items__block
-                                    img(src='../img/services-icon_chart.svg' alt='icon-chart')
-                        .services__item
-                            a(href='#')
-                                .items__block
-                                    img(src='../img/services-icon_chart.svg' alt='icon-chart')
-
-            .about-us
-            .works
-            .request
-            .block-posts
-            .clients
-            .footer
+                .section__title Services
+                .section__subtitle We offer ipsum dolor sit amet, consetetur sadipscing elitr amet
+                .container.services__items
+                    .services__item
+                        a(href='#')
+                            .items__block
+                                img(class='item__icon' src='../img/services-icon_chart.svg' alt='typography' width='90'
+                                    height='90')
+                                //svg(version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='50px' height='50px' viewBox='0 0 1000 1000' enable-background='new 0 0 1000 1000' xml:space='preserve')
+                                //    g(class='item__icon')
+                                //        g(transform='translate(0.000000,512.000000) scale(0.100000,-0.100000)')
+                                //        path(d='M4541.4,5004.3c-945.5-84.4-1937.1-494.8-2667.8-1106.6c-241.7-201.4-611.8-586.9-784.4-815.1C571.3,2392.1,251,1607.7,124.4,719.7c-32.6-226.3-32.6-982,0-1208.3c134.3-935.9,492.9-1779.8,1052.9-2474.1c201.4-249.3,615.6-652.1,859.2-836.2c684.7-512.1,1472.9-834.3,2359-960.9c226.3-32.6,982-32.6,1208.3,0c891.8,126.6,1668.6,445,2364.8,966.6c228.2,170.7,650.2,579.2,838.1,811.3c475.6,585,851.6,1371.3,995.4,2080.9c82.5,406.6,97.8,565.8,97.8,1016.5c0,448.8-15.3,606-97.8,1012.7c-140,703.9-512.1,1484.5-980.1,2065.6c-201.4,249.3-615.6,652.1-859.2,836.2C6975.2,4770.3,5772.7,5113.6,4541.4,5004.3z M5699.8,4768.4c1022.2-163,1946.7-638.7,2658.2-1367.5c370.2-377.8,621.4-732.6,859.2-1214c303-611.8,452.6-1210.2,475.6-1910.2c17.2-550.4-42.2-1026.1-195.6-1528.6c-312.6-1033.8-982-1935.2-1889.1-2543.1c-820.9-550.4-1760.6-815.1-2769.4-782.5c-700,23-1298.4,172.6-1910.2,475.6c-772.9,383.6-1390.5,928.3-1866.1,1647.5C701.7-1907.8,435.2-1194.4,335.4-507.7C297.1-245,302.8,531.8,345,796.4c163,1043.3,629.1,1956.3,1369.4,2677.4c788.3,771,1741.5,1212.1,2873,1329.1C4762,4820.2,5515.7,4797.2,5699.8,4768.4z')
+                                //        path(d='M6789.2,2624.2l-351-351L6279,2432.4c-113.2,113.2-170.7,157.3-205.2,157.3c-38.3,0-170.7-122.8-600.3-552.4c-561.9-563.9-594.6-604.1-527.4-671.3c67.1-67.1,109.3-34.5,623.3,479.5l504.4,504.4l109.3-111.2l111.2-109.3l-585-585l-585-585l-932.1,930.2c-916.8,911-934,928.3-1043.3,960.9c-130.4,36.4-258.9,26.9-368.2-26.8c-86.3-46-349-310.7-400.8-406.6c-51.8-97.8-49.9-328,5.7-431.5c23-44.1,423.9-460.3,943.6-978.1C3826,512.6,4232.6,98.3,4232.6,86.8c0-9.6-352.9-374-786.3-805.5c-838.1-838.1-832.4-830.4-744.1-924.4l42.2-46L2577.5-1856c-186-186-199.5-226.3-115.1-314.6l51.8-53.7l-105.5-111.2c-57.5-59.5-138.1-145.8-180.3-191.8l-74.8-80.6l70.9-71l71-72.9l186,186l187.9,186l63.3-57.5c95.9-86.3,126.6-76.7,310.7,117c151.5,161.1,165,170.7,199.5,143.8c21.1-15.3,51.8-28.8,67.1-28.8c17.3,0,391.2,360.6,832.4,799.8l803.6,801.7l826.6-836.2l828.5-838.1l567.7-184.1c310.7-101.6,581.1-184.1,598.4-184.1c17.3,0,46,21.1,63.3,46c28.8,46,21.1,72.9-164.9,632.9c-107.4,322.2-205.2,592.6-218.7,600.3c-13.4,9.6-385.5,379.7-826.6,826.6l-803.6,811.3l1010.7,1010.7c629.1,629.1,1010.7,1026.1,1010.7,1049.1c0,21.1-124.7,161.1-301.1,339.5c-232.1,232.1-312.6,303-351,303C7149.7,2973.3,7057.7,2894.6,6789.2,2624.2z M7381.8,2537.9c103.6-103.6,187.9-195.6,187.9-207.1c0-11.5-51.8-67.1-117-122.8l-117-103.6l-193.7,193.7l-195.6,195.6l115.1,115.1c63.3,63.3,118.9,115.1,124.7,115.1C7190,2723.9,7280.2,2639.5,7381.8,2537.9z M3072.3,2664.5c49.9-13.4,118.9-63.3,205.2-147.7l132.3-126.6l-293.5-293.4l-293.4-293.4l-130.4,130.4c-145.8,145.8-180.3,224.4-149.6,345.2c32.6,117,339.5,398.9,443,406.6C2991.7,2685.6,3030.1,2676,3072.3,2664.5z M7090.3,1832.1l-105.5-105.5L6783.4,1928l-199.5,201.4l103.6,105.5l105.5,105.5l201.4-201.4l201.4-201.4L7090.3,1832.1z M4961.4,815.6c0-24.9-176.5-201.4-201.4-201.4c-9.6,0-335.6,316.5-723.1,703.9l-705.8,705.8l109.3,109.3l111.2,111.2l703.9-703.9C4644.9,1153.2,4961.4,827.1,4961.4,815.6z M6664.5,1757.3l176.5-174.5l-579.2-579.2c-320.3-320.3-588.8-581.1-600.3-581.1c-11.5,0-105.5,86.3-211,191.8L5258.7,806l585,585c487.2,487.1,588.8,579.2,613.7,561.9C6472.7,1939.5,6566.7,1853.2,6664.5,1757.3z M3916.1,1166.6l702-713.5L4503,338L4388,224.9l-707.7,717.3l-709.6,717.3l107.4,111.2c59.5,59.4,113.2,109.3,120.8,109.3C3206.5,1880,3528.7,1559.8,3916.1,1166.6z M4424.4-833.8c-606-606.1-1112.4-1102.8-1122-1102.8c-11.5,0-105.5,86.3-211,191.8L2899.7-1553L4012-440.6L5124.4,671.8l201.4-201.4L5527.2,269L4424.4-833.8z M6451.6-655.4c425.8-425.8,772.9-782.5,772.9-792.1c0-34.5-209.1-230.1-226.3-211c-7.7,11.5-360.6,366.3-780.6,792.1l-765.2,771l103.6,105.5c57.5,57.5,109.3,105.5,115.1,105.5S6027.7-231.6,6451.6-655.4z M6089.1-1023.7c423.9-427.7,771-784.4,771-792.1c0-9.6-46-61.4-101.7-117l-99.7-99.7l-786.3,786.3l-786.3,786.3l105.5,105.5c57.5,57.5,109.3,105.5,117,105.5C5314.3-248.8,5665.3-597.9,6089.1-1023.7z M7470-2026.7c63.3-193.7,113.2-351,109.3-351c-7.7,0-606,205.2-677,232.1c-47.9,19.2-46,23,187.9,257c132.3,132.3,243.6,232.1,251.2,224.4C7349.2-1671.9,7406.7-1834.9,7470-2026.7z M2961-1940.4l78.6-82.5L2936.1-2138L2832.5-2253l-90.1,90.1l-92.1,92.1l105.5,105.5c57.5,57.5,109.3,105.5,115.1,105.5C2876.6-1859.9,2916.9-1896.3,2961-1940.4z')
+                                .block__title Clean Typography
+                                .block__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
+                    .services__item
+                        a(href='#')
+                            .items__block
+                                img(class='item__icon' src='../img/services-icon_tags.svg' alt='code' width='90'
+                                    height='90')
+                                .block__title Rock Solid Code
+                                .block__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
+                    .services__item
+                        a(href='#')
+                            .items__block
+                                img(class='item__icon' src='../img/services-icon_saver.svg' alt='support' width='90'
+                                    height='90')
+                                .block__title Expert Support
+                                .block__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
+        .about-us
+        .works
+        .request
+        .block-posts
+        .clients
+        .footer
 
